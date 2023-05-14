@@ -4,6 +4,9 @@ import { createFileRoute, createURLRoute } from 'electron-router-dom'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png' // ?asset'
 
+import './ipc'
+import './store'
+
 function createWindow(): void {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
@@ -12,7 +15,7 @@ function createWindow(): void {
     show: false,
     autoHideMenuBar: true,
     backgroundColor: '#17141f',
-    titleBarStyle: 'hidden',
+    titleBarStyle: 'default',
     trafficLightPosition: {
       x: 20,
       y: 20,
