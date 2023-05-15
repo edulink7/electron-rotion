@@ -16,7 +16,7 @@ export function createTray(window: BrowserWindow) {
       click: () => {
         window.webContents.send('new-document')
       },
-      accelerator: 'CommandOrControl+N',
+      accelerator: 'CommandOrControl+D',
     },
     { type: 'separator' },
     {
